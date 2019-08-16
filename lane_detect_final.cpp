@@ -308,7 +308,7 @@ class Detector
 
     HOGDescriptor hog_people;
 public:
-    Detector() : hog_people()//(Size(48, 96), Size(16, 16), Size(8, 8), Size(8, 8), 9))
+    Detector() : hog_people()
     {
     	hog_people.setSVMDetector(HOGDescriptor::getDefaultPeopleDetector());
     }
